@@ -8,6 +8,7 @@
 
 import React, { Component } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
+// import Sound from 'react-native-sound';
 
 export default class App extends Component {
   constructor(props) {
@@ -18,6 +19,14 @@ export default class App extends Component {
   }
 
   setCountdown() {
+    // const sound = new Sound('http://sounds.com/some-sound', null, error => {
+    //   if (error) {
+    //     // do something
+    //   }
+
+    //   // play when loaded
+    //   sound.play();
+    // });
     const interval = setInterval(() => {
       if (this.state.timer > 0) {
         this.setState(previousState => {
